@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* CODIGO DEL NAVBAR */
+
+nav{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+    nav a{
+        width: 30%;
+    }
+        nav a img{
+            width: 45%;
+        }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: ;    
+    }
+    nav ul li{
+        list-style: none;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+/* CODIGO DEL ABOUT */
+
+/* CODIGO DEL SKILLS */
+
+/* CODIGO DEL PROJECTS */
+
+/* CODIGO DEL CONTACT */
