@@ -22,14 +22,31 @@ body{
 li{
     list-style: none;
 }
-a{
+.navbar ul .navbar-item{
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
+    position: relative;
 }
-a:hover{
-    color: aqua;
+
+.navbar .logo a{
+    text-decoration: none;
 }
+    .navbar-item::before{
+        position: absolute;
+        content: "";
+        top:20px;
+        left: 0;
+        display: block;
+        height: 2px;
+        width: 0;
+        background-color: #fff;
+
+        transition: all .5s;
+    }
+    .navbar-item:hover::before{
+        width: 100%;
+    }
 
 header{
     position: relative;
@@ -163,7 +180,7 @@ header{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
 }
 .info .left{
     display: flex;
@@ -178,7 +195,7 @@ header{
     }
     h2{
         color: rgb(190, 42, 42);
-        
+        margin-top: 20px;
     }
     
     .info .right{
@@ -196,19 +213,95 @@ header{
     .viewMore{
         width: 200px;
         height: 50px;
-        border: 1px solid rgb(190, 42, 42);
+        bottom: 50px;
         border-radius: 5px;
+        padding: 0 2em;
         background-color: #131313;
         color: #fff;
         transition: scale .3s ease;
         font-size: 1rem;
+        position: relative;
     }
+    .viewMore::before{
+        position: absolute;
+        content:"";
+        bottom:0;
+        left: 0;
+        display: block;
+        height: 3px;
+        width: 0;
+        background-color: rgb(190, 42, 42);
+
+        transition: all 1s;
+    }
+
     .viewMore:hover{
-        scale: 1.05;
-        cursor: cell;
+        cursor: pointer;
+    } 
+
+    .viewMore:hover::before{
+        width: 100%;
     }
+
+    .tres::before{
+        left: 50%;
+    }
+
+    .tres:hover::before{
+        left:0;
+    }
+
 /* CODIGO DEL ABOUT */
 
+.about{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-about{
+    height: 100vh;
+    background-color: #131313;
+    background-image: url('../img/background-about.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.section-about .left{
+    padding: 0% 4%;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+.section-about .right{
+    width: 50%;
+    padding: 3% 0% 0% 4%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+    h2{
+        margin-bottom: 15px;
+    }
+    p{
+        text-align: left;
+        color: #fff;
+        margin-bottom: 15px;
+    }
+
+.about .next button{
+    background-color: darkgray;
+    color: #000;
+    font-weight: bold;
+    margin-left: 2%;
+    transform: translateY(-30px);
+}
 /* CODIGO DEL SKILLS */
 
 /* CODIGO DEL PROJECTS */
