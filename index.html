@@ -9,29 +9,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO</title>
+    <!-- PARA EL NAVBAR -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--     FUENTES  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- ANIMACIONES -->
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    </head>
+
 </head>
 
 <body>
-    <header>
+    <header id="start">
         <div class="navbar">
             <div class="logo">
-<<<<<<< HEAD
-                <a href="#hireme">JMDev</a>
-=======
-                <a href="#hireme">JM</a>
->>>>>>> 15762bbd942fdb1676cc9cab324aab1236f0cef6
+                <a href="#start">JMDev</a>
             </div>
             <ul class="links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
             <a href="#" class="action_btn">Download CV</a>
             <div class="toggle_btn">
@@ -39,25 +42,26 @@
             </div>
         </div>
         <div class="dropdown_menu">
-            <li><a href="#about">about</a></li>
-            <li><a href="#skills">skills</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
             <li><a href="#" class="action_btn">Download CV</a></li>
         </div>
     </header>
     <main>
         <section id="hireme" class="hireme">
-            <div class="left">
-                <h1>Hi, <br>I´m</h1><p>Julian Miño</p>
-                <h2>Frontend Developer</h2>
-                <div class="viewMore">
-                    <button class="viewMore">View More</button>
+            <div class="info">
+                <div class="left">
+                    <h1 class="animate__animated animate__fadeInUp">Hi, <br>I´m <br> Julian Miño</h1>
+                    <h2 class="animate__animated animate__fadeInLeft">Frontend Developer</h2>
+                </div>
+                <div class="right">
+                    <img src="./img/profile.jpg"
+                        alt="profile avatar">
                 </div>
             </div>
-            <div class="right">
-                <img src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector-PNG-File.png" alt="profile avatar">
-            </div>
+            <button class="viewMore">VIEW MORE</button>
         </section>
 
         <section id="about" class="about">
