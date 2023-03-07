@@ -125,6 +125,11 @@ header{
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+.dropdown_menu li a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .dropdown_menu.open{
     height: 240px;
 }
@@ -189,11 +194,11 @@ header{
     width: 50%;
     margin-left: 10%;
 }
-    h1{
+    .info .left h1{
         font-size: 4rem;
         color: #fff;
     }
-    h2{
+    .info .left h2{
         color: rgb(190, 42, 42);
         margin-top: 20px;
     }
@@ -251,8 +256,8 @@ header{
         left:0;
     }
 
-/* CODIGO DEL ABOUT */
 
+/* CODIGO DEL ABOUT parte 1 */
 .about{
     display: flex;
     flex-direction: column;
@@ -286,14 +291,19 @@ header{
     flex-direction: column;
     
 }
-    h2{
+    .section-about div h2{
+        color: rgb(190, 42, 42);
         margin-bottom: 15px;
     }
-    p{
+    .section-about div p{
         text-align: left;
         color: #fff;
         margin-bottom: 15px;
     }
+    .section-about div .subtitle{
+        letter-spacing: 4px;
+    }
+
 
 .about .next button{
     background-color: darkgray;
@@ -302,6 +312,86 @@ header{
     margin-left: 2%;
     transform: translateY(-30px);
 }
+
+.next{
+    background-color: #131313;
+}
+
+/* CODIGO DEL ABOUT parte 2 */
+
+.about-skills{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.sections{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+}
+
+.sections .left{
+    width: 50%;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}   
+    .sections .left h2{
+        font-size: 4rem;
+        margin: 5% 0 5% 10%;
+    }
+    .sections .left p{
+        font-size: 1.5rem;
+        margin: 5% 0 0% 10%;
+    }
+
+.sections .right{
+    width: 50%;
+}
+
+    .technologies-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        "tech1 tech2 tech3 tech4"
+        "tech5 tech6 tech7 tech8";
+    }
+
+    .technologies-grid img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .tech1{
+        grid-area: tech1;
+    }
+    .tech2{
+        grid-area: tech2;
+    }
+    .tech3{
+        grid-area: tech3;
+    }
+    .tech4{
+        grid-area: tech4;
+    }
+    .tech5{
+        grid-area: tech5;
+    }
+    .tech6{
+        grid-area: tech6;
+    }
+    .tech7{
+        grid-area: tech7;
+    }
+    .tech8{
+        grid-area: tech8;
+    }
+
 /* CODIGO DEL SKILLS */
 
 /* CODIGO DEL PROJECTS */
