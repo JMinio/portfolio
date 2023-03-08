@@ -322,7 +322,7 @@ header{
 .about-skills{
     display: flex;
     flex-direction: column;
-    background-image: url('../img/background/fade-pixels-azul.svg');
+    background-image: url('../img/background/face-pixels-red.svg');
     background-size: cover;
     background-position: center;
 
@@ -370,6 +370,7 @@ header{
     }
 
     .sections .left p{
+        color: #fff;
         font-size: 1.5rem;
         margin: 5% 0 0% 10%;
     }
