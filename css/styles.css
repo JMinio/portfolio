@@ -322,7 +322,10 @@ header{
 .about-skills{
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-image: url('../img/background/fade-pixels-azul.svg');
+    background-size: cover;
+    background-position: center;
+
 }
 
 .sections{
@@ -341,9 +344,31 @@ header{
     align-items: flex-start;
 }   
     .sections .left h2{
-        font-size: 4rem;
+        font-size: 3rem;
         margin: 5% 0 5% 10%;
     }
+
+    .sections .left .whoiam{
+        display: block;
+        white-space: nowrap;
+        border-right: 4px solid;
+        width: 9ch;
+
+        animation: typing 2s steps(9), blink .5s infinite step-end alternate;
+        overflow: hidden;
+    }
+
+    @keyframes typing{
+        from{
+            width: 0;
+        }
+    }
+    @keyframes blink{
+        50%{
+            border-color: transparent;
+        }
+    }
+
     .sections .left p{
         font-size: 1.5rem;
         margin: 5% 0 0% 10%;
@@ -351,22 +376,34 @@ header{
 
 .sections .right{
     width: 50%;
+    padding: 5%;
 }
 
+    .sections .right h2{
+        color: #fff;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        font-size: 3rem;
+    }
     .technologies-grid{
+        margin-top: 10%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2,1fr);
         grid-template-areas: 
         "tech1 tech2 tech3 tech4"
         "tech5 tech6 tech7 tech8";
-    }
+        gap: 60px 0px;
+        
+        }
 
     .technologies-grid img{
-        width: 40px;
-        height: 40px;
+        width: 80px;
+        height: 80px;
+        background-color: darkslateblue;
+        padding: 10px;
+        border-radius: 20px;
     }
-
     .tech1{
         grid-area: tech1;
     }
